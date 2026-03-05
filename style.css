@@ -1,0 +1,68 @@
+html, body {
+  overflow-x: hidden;   /* 🔒 prevents page widening */
+}
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: 100%;
+  color: white;
+  font-family: Verdana;
+  margin: 0;
+}
+
+.hero {
+  height: 500px;
+  background:
+    linear-gradient(to bottom, transparent 65%, black 100%),
+    url("/img/bg.jpg") top center / cover no-repeat;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  white-space: nowrap;       /* prevents wrapping */
+  margin-right: 120px;       /* ✅ GUARANTEED gap */
+  font-size: 5rem;
+  text-shadow: 0px 0px 8px;
+  
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: move 12s linear infinite;
+  will-change: transform;
+}
+
+@keyframes move {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-shadow: 0px 0px 4px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
